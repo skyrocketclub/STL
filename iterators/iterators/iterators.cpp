@@ -61,7 +61,7 @@ void test3() {
 
     while (it1 != nums1.end()) {
         std::cout << *it1 << std::endl;
-        it1++;
+        it1++;//Acts like a pointer
     }
 
     it1 = nums1.begin();
@@ -72,7 +72,7 @@ void test3() {
 
 void test4() {
     std::vector<int> vec{ 1,2,3,4,5 };
-    auto it1 = vec.rbegin();
+    auto it1 = vec.rbegin(); //beginning is the end in actuality due to the reverse...
     while (it1 != vec.rend()) {
         std::cout << *it1 << std::endl;
         it1++;
@@ -86,7 +86,7 @@ void test4() {
     std::map<std::string, std::string> favorites{ {"Frank", "C++"}, {"Bill","Java"}, {"James", "Haskell"} };
     auto it3 = favorites.begin();
     while (it3 != favorites.end()) {
-        std::cout << it3->first << " : " << it3->second << std::endl;
+        std::cout << it3->first << " : " << it3->second << std::endl; //maps are called with -> first & -> second
         it3++;
     }
 }
@@ -104,8 +104,8 @@ void test5() {
 
 int main()
 {
-   /* test1();*/
-    /*test2();*/
+    test1();
+    test2();
     test3();
     test4();
     test5();
