@@ -61,7 +61,7 @@ void test3() {
     std::cout << "\nTest3===========================================================" << std::endl;
     std::array<int, 5> arr1{ 1,2,3,4,5 };
 
-    int* ptr = arr1.data();
+    int* ptr = arr1.data();// .data() is the address of the array...
     std::cout << ptr << std::endl;
     *ptr = 100000;
 
@@ -74,7 +74,7 @@ void test4() {
     std::array<int, 5> arr1{ 2,1,4,5,3 };
     display(arr1);
 
-    std::sort(arr1.begin(), arr1.end());
+    std::sort(arr1.begin(), arr1.end()); //arranges all from the range you specify start to the range's specified end
     display(arr1);
 }
 
