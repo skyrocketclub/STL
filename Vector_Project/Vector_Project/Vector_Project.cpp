@@ -140,7 +140,7 @@ void test6() {
 	auto it = vec.begin();
 	while (it != vec.end()) {
 		if (*it % 2 == 0) {
-			vec.erase(*it);
+			vec.erase(it);
 		}
 		else {
 			it++;
